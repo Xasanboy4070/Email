@@ -31,8 +31,13 @@ function App() {
       <h1>Message</h1>
       <form ref={form} onSubmit={sendEmail} action="">
         <input name="user_name" type="text" placeholder="name" />
-        <input name="user_email" type="number" placeholder="phone number" />
+        <input
+          name="user_phone_number"
+          type="number"
+          placeholder="phone number"
+        />
         <input name="subject" type="text" placeholder="from whom message" />
+        <textarea name="message" cols="18" rows="8"></textarea>
         <button type="submit">send email</button>
       </form>
     </div>
