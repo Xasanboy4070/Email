@@ -28,11 +28,11 @@ function App() {
 
   return (
     <div>
-      <h1>Email</h1>
+      <h1>Message</h1>
       <form ref={form} onSubmit={sendEmail} action="">
-        <input name="user_name" type="text" placeholder="text" />
-        <input name="user_email" type="email" placeholder="text" />
-        <input name="subject" type="number" placeholder="number" />
+        <input name="user_name" type="text" placeholder="name" />
+        <input name="user_email" type="number" placeholder="phone number" />
+        <input name="subject" type="text" placeholder="from whom message" />
         <button type="submit">send email</button>
       </form>
     </div>
